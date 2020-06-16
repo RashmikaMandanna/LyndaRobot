@@ -24,7 +24,7 @@ You can find the list of available commands with /help.
 -> [Lynda's Repo](https://waa.ai/Lynda)
 -> Report [Lynda Support](https://t.me/LyndaEagleSupport) if I go offline
 ==========================
-`Maintained by` @YorktownEagleUnion
+`Maintained by` [Unknown Hacker X](https://t.me/Unknown_Hacker_X) . 
 
 """
 
