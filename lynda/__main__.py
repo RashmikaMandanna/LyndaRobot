@@ -49,7 +49,7 @@ Have a look at Following:
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/35005c01182645232f2d3.jpg"
+LYNDA_IMG = "https://telegra.ph/DadOfHacking-06-16"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Dad Of Hacking is hosted on one of Digital Ocean Servers. \
