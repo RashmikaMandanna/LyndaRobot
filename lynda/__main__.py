@@ -17,25 +17,25 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-// I am an Anime themed group management bot with a lot of Special Features.
-You can find the list of available commands with /help.
+Hi *{}* , My Name Is *{}* . 
+I'm A Group Management Bot With A Lot Of *Special* *Features* .
+You Can Find The List Of Available Commands With /help Or By Clicking *HELP* Button Below!
 ==========================
--> [Lynda's Repo](https://waa.ai/Lynda)
--> Report [Lynda Support](https://t.me/LyndaEagleSupport) if I go offline
+Special Thanks To [Unknown Hacker X] (https://t.me/Unknown_Hacker_X) .
+-> Report [DadOfHacking Support](https://t.me/IPCA_BOT_Support) If I Go Offline . 
 ==========================
-`Maintained by` [Unknown Hacker X](https://t.me/Unknown_Hacker_X) . 
+`Maintained by` [Dad Of Hacking](https://t.me/Dadsbka) . 
 
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a part of Eagle Union.
+Hey There! My Mame Is *{}*.
+I'm A Group Management Bot With A Lot Of *Special* *Features* .
 Have a look at the following for an idea of some of \
 the things I can help you with.
-I'm managed by [Poki](https://t.me/pokurt)
-Chatbot module from [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot.git)
-Disaster module from [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot)
+I'm managed by [DadOfHacking](https://t.me/Dadsbka). 
+If You Need Any Support Or Help.. Join [Dad Of Hacking Support Group](https://t.me/IPCA_BOT_Support) . 
+Have a look at Following: 
 *Main* commands available:
  - /start: start the bot
  - /help: PM's you this message.
@@ -52,9 +52,9 @@ And the following:
 LYNDA_IMG = "https://telegra.ph/file/35005c01182645232f2d3.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Lynda is hosted on one of Digital Ocean Servers. \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+Dad Of Hacking is hosted on one of Digital Ocean Servers. \
+You can donate to the original writer of the Base code, Unknown Hacker X , DADOFHACKING
+Contact [My Master](https://t.me/Dadsbka) Or [Unknown Hacker X](https://t.me/Unknown_Hacker_X) to get info about Donating!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -148,14 +148,14 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="👥 Add Lynda to your group", url="https://t.me/LyndaRobot?startgroup=new")],
-                [InlineKeyboardButton(text="🙋 Support Group", url="https://t.me/LyndaEagleSupport"), InlineKeyboardButton(text="🚫 Global Logs", url="https://t.me/LyndaGLogs")],
-                [InlineKeyboardButton(text="❔ Help", callback_data="help_back"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/LyndaUpdateLogs")]])
+                [[InlineKeyboardButton(text="👥 Add Me To Your Groups", url="https://t.me/DadOfHacking_Bot?startgroup=new")],
+                [InlineKeyboardButton(text="Support Group", url="https://t.me/IPCA_BOT_Support"), InlineKeyboardButton(text="🚫 Global Logs", url="https://t.me/DadOfHackingGLogs")],
+                [InlineKeyboardButton(text="❔ Help", callback_data="help_back"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/DadOfHackingUpdates")]])
             message.reply_photo(LYNDA_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=buttons)
     else:
-        message.reply_text("Hola!")
+        message.reply_text("Yup. I'm Alive. PM Me If You Have Any Questions On How To Use Me.")
 
 
 # for test purposes
