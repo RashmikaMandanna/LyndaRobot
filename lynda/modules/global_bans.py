@@ -62,29 +62,29 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Union\nI can't act against our own.")
+            "Huh? I Can't Gban This User. This Person Is One Of My Sudo Users 😏.")
         return
 
     if int(user_id) in SUDO_USERS:
         message.reply_text(
-            "I spy, with my little eye... a Nation! Why are you guys turning on each other?")
+            "Huh? I Can't Gban This User. This Person Is One Of My Sudo Users 😏")
         return
 
     if int(user_id) in SUPPORT_USERS:
         message.reply_text(
-            "OOOH someone's trying to gban a Sakura Nation! *grabs popcorn*")
+            "Huh? I Can't Gban This User. This Person Is One Of My Sudo Users 😏")
         return
 
     if int(user_id) in SARDEGNA_USERS:
-        message.reply_text("That's a Sardegna! They cannot be banned!")
+        message.reply_text("Huh? I Can't Gban This User. This Person Is One Of My Sudo Users 😏")
         return
 
     if int(user_id) in WHITELIST_USERS:
-        message.reply_text("That's a Neptunia! They cannot be banned!")
+        message.reply_text("Huh? I Can't Gban This User. This Person Is One Of My Sudo Users 😏")
         return
 
     if user_id == bot.id:
-        message.reply_text("You uhh...want me to punch myself?")
+        message.reply_text("Wew Nice. You Fool I'm Not Gonna Gban Myself. Are You Crazy?")
         return
 
     try:
@@ -451,7 +451,7 @@ def __user_info__(user_id):
         user = sql.get_gbanned_user(user_id)
         if user.reason:
             text += f"\n<b>Reason:</b> {html.escape(user.reason)}"
-        text += "\n<b>Appeal Chat:</b> @Aman_Ahmed"
+        text += "\n<b>Appeal Chat:</b> @Unknown_Hacker_X"
     else:
         text = text.format("No")
     return text
