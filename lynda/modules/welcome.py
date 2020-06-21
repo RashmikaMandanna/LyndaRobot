@@ -121,31 +121,31 @@ def new_member(bot: Bot, update: Update, job_queue: JobQueue):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A member of the Eagle Union just joined!")
+                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Sudos
             elif new_mem.id in SUDO_USERS:
                 update.effective_message.reply_text(
-                    "Huh! A Royal Nation just joined! Stay Alert!")
+                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Support
             elif new_mem.id in SUPPORT_USERS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a Sakura Nation level just joined!")
+                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Whitelisted
             elif new_mem.id in SARDEGNA_USERS:
                 update.effective_message.reply_text(
-                    "Oof! A Sardegna Nation just joined!")
+                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Sardegnas
             elif new_mem.id in WHITELIST_USERS:
                 update.effective_message.reply_text(
-                    "Oof! A Neptunia Nation just joined!")
+                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome yourself
             elif new_mem.id == bot.id:
-                update.effective_message.reply_text("Watashi ga kitta!")
+                update.effective_message.reply_text("Thanks For Adding Me. Make Sure That I'm Admin Have All Rights.")
 
             else:
                 # If welcome message is media, send with appropriate function
@@ -327,13 +327,13 @@ def left_member(bot: Bot, update: Update):
 
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Oi! Genos! He left..")
+                update.effective_message.reply_text("Ooo! My Master Left. I'm Feeling Sad.")
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Hero's Union!")
+                    "One Of My Sudo Users Left The Group. Miss You..")
                 return
 
             # if media goodbye, use appropriate function for it
@@ -837,7 +837,7 @@ dispatcher.add_handler(WELCOMEMUTE_HANDLER)
 dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 
-__mod_name__ = "Welcomes/Goodbyes"
+__mod_name__ = "Greetings"
 __command_list__ = [
     "welcome",
     "goodbye",
