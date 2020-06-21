@@ -17,11 +17,11 @@ from lynda.modules.helper_funcs.chat_status import is_user_admin
 from lynda.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi *{}* , My Name Is *{}* . 
+Hi *{}* , My Name Is *DadOfHacking* . 
 I'm A Group Management Bot With A Lot Of *Special* *Features* .
 You Can Find The List Of Available Commands With /help Or By Clicking *HELP* Button Below!
 ==========================
-Special Thanks To [Unknown Hacker X] (https://t.me/Unknown_Hacker_X) .
+`Special Thanks To` [This Person](https://t.me/Unknown_Hacker_X) .
 -> Report [DadOfHacking Support](https://t.me/IPCA_BOT_Support) If I Go Offline . 
 ==========================
 `Maintained by` [Dad Of Hacking](https://t.me/Dadsbka) . 
@@ -29,7 +29,7 @@ Special Thanks To [Unknown Hacker X] (https://t.me/Unknown_Hacker_X) .
 """
 
 HELP_STRINGS = """
-Hey There! My Mame Is *{}*.
+Hey There! My Mame Is *DadOfHacking*.
 I'm A Group Management Bot With A Lot Of *Special* *Features* .
 Have a look at the following for an idea of some of \
 the things I can help you with.
@@ -49,7 +49,7 @@ Have a look at Following:
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/DadOfHacking-06-16"
+LYNDA_IMG = "https://telegra.ph/DadOfHacking-06-21"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Dad Of Hacking is hosted on one of Digital Ocean Servers. \
