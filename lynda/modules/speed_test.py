@@ -48,7 +48,7 @@ def speedtestxyz_callback(bot: Bot, update: Update):
                 replymsg, parse_mode=ParseMode.MARKDOWN)
     else:
         query.answer(
-            "You are required to join Eagle Union to use this command.")
+            "You are required to join Support Group to use this command.")
 
 
 SPEED_TEST_HANDLER = DisableAbleCommandHandler("speedtest", speedtestxyz)
