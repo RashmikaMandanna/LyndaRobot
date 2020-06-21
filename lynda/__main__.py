@@ -24,7 +24,7 @@ You Can Find The List Of Available Commands With /help Or By Clicking *HELP* But
 `Special Thanks To` [This Person](https://t.me/Unknown_Hacker_X) .
 -> Report [DadOfHacking Support](https://t.me/IPCA_BOT_Support) If I Go Offline . 
 ==========================
-`Maintained by` [Dad Of Hacking](https://t.me/Dadsbka) . 
+`Maintained By` [Dad Of Hacking](https://t.me/Dadsbka) . 
 
 """
 
