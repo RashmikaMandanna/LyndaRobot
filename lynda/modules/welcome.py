@@ -113,7 +113,7 @@ def new_member(bot: Bot, update: Update, job_queue: JobQueue):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oh, Genos? Let's get this moving.")
+                    "Oh, Wait..What? It's My Master. Wow.. Welcome Master I'm Lonely Here Without You.. Now Let's Start The Party.")
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
                                f"Bot Owner just joined the chat")
@@ -121,27 +121,27 @@ def new_member(bot: Bot, update: Update, job_queue: JobQueue):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
+                    "Huh? Someone With Powers As My Owner Has.. Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Sudos
             elif new_mem.id in SUDO_USERS:
                 update.effective_message.reply_text(
-                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
+                    "Huh? Someone With Powers As My Owner Has.. Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Support
             elif new_mem.id in SUPPORT_USERS:
                 update.effective_message.reply_text(
-                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
+                    "Huh? Someone With Powers As My Owner Has.. Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Whitelisted
             elif new_mem.id in SARDEGNA_USERS:
                 update.effective_message.reply_text(
-                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
+                    "Huh? Someone With Powers As My Owner Has.. Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome Sardegnas
             elif new_mem.id in WHITELIST_USERS:
                 update.effective_message.reply_text(
-                    "Huh? Someone With Powers As My Owner Just Joined The Group. Kek Let's Start The Party!")
+                    "Huh? Someone With Powers As My Owner Has.. Just Joined The Group. Kek Let's Start The Party!")
 
             # Welcome yourself
             elif new_mem.id == bot.id:
